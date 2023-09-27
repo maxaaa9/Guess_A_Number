@@ -11,8 +11,10 @@ while True:
         player_selection = int(player_selection)
     if player_selection > computer_selection:
         print("Too high!")
+
     elif player_selection < computer_selection:
         print("Too low!")
+
     else:
         print("You guess it!")
         exit()
