@@ -1,5 +1,5 @@
 import random
-
+from colorama import Fore, Back, Style
 computer_selection = random.randint(1, 100)
 
 while True:
@@ -11,11 +11,11 @@ while True:
     else:
         player_selection = int(player_selection)
     if player_selection > computer_selection:
-        print("Too high!")
+        print(Fore.RED + "Too high!")
 
     elif player_selection < computer_selection:
-        print("Too low!")
+        print(Fore.GREEN + "Too low!")
 
     else:
-        print("You guess it!")
+        print(Fore.BLUE + "You guess it!")
         exit()
