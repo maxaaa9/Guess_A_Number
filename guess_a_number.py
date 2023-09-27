@@ -7,6 +7,7 @@ while True:
     if not player_selection.isdigit():
         print("Please select number between 1 - 100")
         continue
+
     else:
         player_selection = int(player_selection)
     if player_selection > computer_selection:
